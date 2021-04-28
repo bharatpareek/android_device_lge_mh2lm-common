@@ -311,3 +311,17 @@ vendor/etc/wifi/KR_ALL/bdwlan_ch1.bin
 vendor/etc/wifi/NA_ALL/bdwlan.bin
 vendor/etc/wifi/NA_ALL/bdwlan_ch0.bin
 vendor/etc/wifi/NA_ALL/bdwlan_ch1.bin
+
+# Added by Deader89 working
+
+# Added by Deader89 testing
+vendor/etc/gps.conf
+vendor/etc/permissions/android.hardware.location.gps.xml
+
+#hdmi
+vendor/lib/libhdmiedid.so
+vendor/lib64/libhdmiedid.so
+
+#sensors
+vendor/lib/sensors.sar.so
+vendor/lib64/sensors.sar.so
