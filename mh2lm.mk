@@ -23,8 +23,7 @@ COMMON_mh2lm_PATH := device/lge/mh2lm-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_mh2lm_PATH)/overlay \
-    $(COMMON_mh2lm_PATH)/overlay-lineage
+    $(COMMON_mh2lm_PATH)/overlay
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_mh2lm_PATH)/system.prop
@@ -45,7 +44,7 @@ TARGET_SCREEN_WIDTH := 2340
 TARGET_SCREEN_HEIGHT := 1080
 
 # DAC
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     QuadDACPanel \
     vendor.lge.hardware.audio.dac.control@1.0-service
 
