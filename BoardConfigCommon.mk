@@ -23,7 +23,7 @@ COMMON_mh2lm_PATH := device/lge/mh2lm-common
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_mh2lm_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/arrow_mh2lm_defconfig
+TARGET_KERNEL_CONFIG := vendor/dot_mh2lm_defconfig
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4336910336
@@ -31,6 +31,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 107715436544
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mh2lm
+TARGET_RECOVERY_DEVICE_MODULES := libinit_mh2lm
 
 # inherit from the proprietary version
 -include vendor/lge/mh2lm/BoardConfigVendor.mk
